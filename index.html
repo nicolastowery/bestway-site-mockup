@@ -116,32 +116,32 @@
                 </div>
             </div>
             <div class="dropdown__item">
-            <button class="dd-toggle">
-                Manuals
-                <i class="fas fa-chevron-down dd-toggle__icon"></i>
-            </button>
-            <div class="dd-menu">
-                <a href="#" class="dd-menu__item">Manual Portal</a>
-                <a href="#" class="dd-menu__item">Legacy Manuals</a>
-                <a href="#" class="dd-menu__item">2022</a>
-                <a href="#" class="dd-menu__item">2021</a>
-                <a href="#" class="dd-menu__item">2020</a>
-                <a href="#" class="dd-menu__item">2019</a>
-                <a href="#" class="dd-menu__item">2018</a>
-                <a href="#" class="dd-menu__item">2017</a>
-                <a href="#" class="dd-menu__item">2016</a>
-                <a href="#" class="dd-menu__item">2015</a>
-                <a href="#" class="dd-menu__item">2014</a>
-            </div>
+                <button class="dd-toggle">
+                    Manuals
+                    <i class="fas fa-chevron-down dd-toggle__icon"></i>
+                </button>
+                <div class="dd-menu">
+                    <a href="#" class="dd-menu__item">Manual Portal</a>
+                    <a href="#" class="dd-menu__item">Legacy Manuals</a>
+                    <a href="#" class="dd-menu__item">2022</a>
+                    <a href="#" class="dd-menu__item">2021</a>
+                    <a href="#" class="dd-menu__item">2020</a>
+                    <a href="#" class="dd-menu__item">2019</a>
+                    <a href="#" class="dd-menu__item">2018</a>
+                    <a href="#" class="dd-menu__item">2017</a>
+                    <a href="#" class="dd-menu__item">2016</a>
+                    <a href="#" class="dd-menu__item">2015</a>
+                    <a href="#" class="dd-menu__item">2014</a>
+                </div>
             </div>
             <div class="dropdown__item">
-            <button class="dd-toggle">
-                Apparel
-                <i class="fas fa-chevron-down dd-toggle__icon"></i>
-            </button>
-            <div class="dd-menu">
-                <a href="https://www.bestwayswag.com" class="dd-menu__item">bestwayswag.com</a>
-            </div>
+                <button class="dd-toggle">
+                    Apparel
+                    <i class="fas fa-chevron-down dd-toggle__icon"></i>
+                </button>
+                <div class="dd-menu">
+                    <a href="https://www.bestwayswag.com" class="dd-menu__item">bestwayswag.com</a>
+                </div>
             </div>
         </div>
         <div class="catalog">
@@ -153,8 +153,74 @@
         </div>
     </header>
     <main class="main">
-        <video controls autoplay> <source src="videos/video.mp4" class="banner"></video>
+        <!--<div class="video-container"> might not be needed, trying to get video to stay in middle of screen when expanded past a threshold-->
+        <video autoplay muted loop class="video">
+            <source src="videos/video.mp4">
+        </video>
+        <!--</div>-->
+        <div class="categories-nav">
+            <div class="block">
+                <img src="images/utv.jpeg" alt="nurse and trailer sprayers" class="block__img">
+                <a class="block__desc" href="/utv-and-trailer-sprayers">trailer sprayers</a>
+            </div>
+            <div class="block">
+                <img src="images/field_pro.jpg" alt="hooded sprayers" class="block__img">
+                <a class="block__desc" href="/utv-and-trailer-sprayers">field equipment</a>
+            </div>
+            <div class="block">
+                <img src="images/nurse.jpg" alt="3 point sprayers" class="block__img">
+                <a class="block__desc" href="/utv-and-trailer-sprayers">sprayer parts</a>
+            </div>
+        </div>
+        <section class="promo">
+            <a href="https://www.bestwayag.com/the-tanker-b3703267" class="promo__link">
+                <img src="images/tanker.jpg" alt="bestway drones dot com" class="promo__img tanker">
+            </a>
+        </section>
+        <div class="brands-nav">
+            <div class="ribbon">
+                <img src="images/teejet.png" alt="" class="ribbon__img teejet">
+                <img src="images/banjo.png" alt="" class="ribbon__img">
+                <img src="images/ace-pumps.avif" alt="" class="ribbon__img"><!--.avif not supported by edge-->
+                <img src="images/shurflo.png" alt="" class="ribbon__img">
+                <img src="images/norwesco.png" alt="" class="ribbon__img norwesco">
+            </div>
+        </div>
+        <section class="promo">
+            <a href="https://www.bestwaydrones.com" class="promo__link">
+                <img src="images/drones.jpg" alt="bestway drones dot com" class="promo__img">
+            </a>
+        </section>
     </main>
+    <footer class="footer">
+        <section class="footer-info">
+            <div class="footer-info-block">
+                <h1 class="footer-info-block__heading">Company Info</h1>
+                <ul class="footer-info-block__content">
+                    <li class="footer-info-block__item">Contact Us</li>
+                    <li class="footer-info-block__item">Locations</li>
+                    <li class="footer-info-block__item">Online Warranty</li>
+                    <li class="footer-info-block__item">Product Manuals</li>
+                    <li class="footer-info-block__item">Parts Viewer</li>
+                </ul>
+            </div>
+            <div class="footer-info-block">
+                <h1 class="footer-info-block__heading">Dealers</h1>
+                <ul class="footer-info-block__content">
+                    <li class="footer-info-block__item">Find a Dealer</li>
+                    <li class="footer-info-block__item">Dealer Login</li>
+                    <li class="footer-info-block__item">Become a Dealer</li>
+                </ul>
+            </div>
+            <div class="footer-info-block">
+                <h1 class="footer-info-block__heading">National Sales</h1>
+                <div class="footer-info-block__content sales">
+                    icons go here
+                </div>
+            </div>
+        </section>
+        <small class="copyright">Copyright &copy; 2023 Bestway Ag. All rights reserved.</small>
+    </footer>
 </body>
 
 </html>
