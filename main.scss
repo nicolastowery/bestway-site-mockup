@@ -189,12 +189,6 @@ button {
     min-width: 370px;
 }
 
-
-
-
-
-
-
 .catalog {
     width: 247px;
     display: flex;
@@ -234,44 +228,58 @@ button {
     width: 100%;
     display: flex;
     animation: fade-in .3s;
+    border-bottom: 5px solid $bestway-yellow;
 }
 
 // CATEGORIES NAV
 .categories-nav {
-    //background-color: #000;
     display: flex;
     justify-content: center;
     column-gap: 7vw;
-    padding: 8%; // probably need to adjust
+    padding: 8% 8%; // probably need to adjust
 }
 
 .block {
     display: flex;
     flex-direction: column;
-    border: 15px solid $bestway-yellow;
+    //border: 15px solid $bestway-yellow;
     text-transform: uppercase;
     animation: fade-in-from-top 1s .33s backwards;
     transition: all .4s;
+    color: #FFF;
+    background-color: #000;
+    cursor: pointer; //visual flare, needs to be legit link
 
     &:hover {
         transform: translateY(-10px);
+        color: $bestway-yellow;
+        
+        .block__img{
+            
+            opacity: 1;
+        }
     }
 
     &__img {
         height: 320px;
         width: 390px;
         object-fit: cover;
-        //border: 2px solid black;
+        transition: all .4s;
+        opacity: .84;
 
     }
 
     &__desc {
-        font-size: 25px;
+        font-size: 28px;
         text-decoration: none;
-        background-color: $bestway-yellow;
-        color: #000;
-        letter-spacing: 1px;
-        padding-left: 1px;
+        background-color: #000;
+
+        letter-spacing: 2px;
+        padding-left: 10px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        transition: all .4s;
+
     }
 }
 
@@ -308,9 +316,6 @@ button {
 
 }
 
-
-
-
 .norwesco {
     height: 40px;
 }
@@ -325,7 +330,7 @@ button {
     width: 100%;
 }
 
-.promo__link{
+.promo__link {
     background-color: #000;
 }
 

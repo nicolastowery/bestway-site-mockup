@@ -193,38 +193,49 @@ button {
   width: 100%;
   display: flex;
   animation: fade-in 0.3s;
+  border-bottom: 5px solid #f3e52c;
 }
 
 .categories-nav {
   display: flex;
   justify-content: center;
   column-gap: 7vw;
-  padding: 8%;
+  padding: 8% 8%;
 }
 
 .block {
   display: flex;
   flex-direction: column;
-  border: 15px solid #f3e52c;
   text-transform: uppercase;
   animation: fade-in-from-top 1s 0.33s backwards;
   transition: all 0.4s;
+  color: #FFF;
+  background-color: #000;
+  cursor: pointer;
 }
 .block:hover {
   transform: translateY(-10px);
+  color: #f3e52c;
+}
+.block:hover .block__img {
+  opacity: 1;
 }
 .block__img {
   height: 320px;
   width: 390px;
   object-fit: cover;
+  transition: all 0.4s;
+  opacity: 0.84;
 }
 .block__desc {
-  font-size: 25px;
+  font-size: 28px;
   text-decoration: none;
-  background-color: #f3e52c;
-  color: #000;
-  letter-spacing: 1px;
-  padding-left: 1px;
+  background-color: #000;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  transition: all 0.4s;
 }
 
 .brands-nav {
