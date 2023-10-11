@@ -16,3 +16,7 @@ This project was a mockup for a potential redesign for [Bestway Ag's wesbite.](h
 - CSS Flexbox
 - Semi-Responsive Web Design
 - SCSS Nesting and Variables
+
+## Notes
+
+- I consider this project to be incomplete. The media queries need to be fleshed out and some containers (hoverable items) need a rework.
